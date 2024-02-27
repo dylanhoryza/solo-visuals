@@ -2,7 +2,7 @@ import '../styles/homepage.css';
 import avatarImage from '../assets/beau-avatar.jpg';
 export default function HomePage() {
   return (
-    <section className='container' id='home'>
+    <section className='container home-container' id='home'>
     
       <div className="youtube-video">
             <iframe className='youtube-box'

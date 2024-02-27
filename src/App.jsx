@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 // App that renders all content 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <Header /> 
         <Outlet />
       </div>
-      
+      <Footer/>
     </div>
   );
 }
