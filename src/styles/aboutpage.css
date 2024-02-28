@@ -1,0 +1,26 @@
+.about-me-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); 
+}
+
+.about-me-card:hover {
+  
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 12px rgba(234, 232, 232, 0.8);
+}
+
+.avatar:hover {
+  box-shadow: 0 0 12px rgba(234, 232, 232, 0.8);
+}
+
+.avatar {
+  width: 634px;
+  height: 376px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); 
+}

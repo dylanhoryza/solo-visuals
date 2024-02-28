@@ -47,6 +47,7 @@ const Navbar = () => {
           <li className='background-nav-container'><Link to="/" onClick={closeMenu}>Home</Link></li>
           <li className='background-nav-container'><Link to="/profile" onClick={closeMenu}>Videos</Link></li>
           <li className='background-nav-container'><Link to="/blog" onClick={closeMenu}>Photos</Link></li>
+          <li className='background-nav-container'><Link to="/about" onClick={closeMenu}>About</Link></li>
           <li className='background-nav-container'><Link to="/news" onClick={closeMenu}>Contact</Link></li>
          
         </ul>
