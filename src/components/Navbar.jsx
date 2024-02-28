@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/navbar.css'
+import '../styles/navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
-
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -43,16 +42,29 @@ const Navbar = () => {
         <div className={`hamburger ${isOpen ? 'open' : ''}`}></div>
       </div>
       {isOpen && (
-        <ul className="menu-items" ref={menuRef}>
+        <ul className="menu-items"     style={{
+          display: isOpen ? 'block' : 'none',
+          position: 'absolute',
+          top: '50px',
+          left: 0,
+          width: '100%',
+          backgroundColor: '#333',
+        }} ref={menuRef}>
           <li className='background-nav-container'><Link to="/" onClick={closeMenu}>Home</Link></li>
           <li className='background-nav-container'><Link to="/profile" onClick={closeMenu}>Videos</Link></li>
           <li className='background-nav-container'><Link to="/blog" onClick={closeMenu}>Photos</Link></li>
           <li className='background-nav-container'><Link to="/about" onClick={closeMenu}>About</Link></li>
           <li className='background-nav-container'><Link to="/news" onClick={closeMenu}>Contact</Link></li>
-         
         </ul>
       )}
-    
+     
+      <ul className="desktop-menu">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/profile">Videos</Link></li>
+        <li><Link to="/blog">Photos</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/news">Contact</Link></li>
+      </ul>
     </nav>
   );
 };
