@@ -24,7 +24,8 @@ body {
 
 .youtube-video {
   margin-bottom: 0px;
- 
+  width: 100%;
+  height: 800px;
   
 }
 
@@ -36,6 +37,8 @@ body {
   /* border-radius: 10px; */
   /* box-shadow: 0 0 12px rgba(234, 232, 232, 0.8); */
   margin-bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .home-container {
@@ -63,6 +66,53 @@ body {
   background-size: cover;
 }
 
+.home-lifestyle-videos {
+  position: relative;
+  background-color: white;
+  margin-top: 0;
+  background-image: url('../home-images/lifestyle.jpg');
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+}
+
+.home-commerical-videos {
+  position: relative;
+  background-color: white;
+  margin-top: 0;
+  background-image: url('../home-images/commerical.jpg');
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+}
+
+.home-about-section {
+  position: relative;
+  background-color: white;
+  margin-top: 0;
+  background-image: url('../home-images/home-avatar.jpg');
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+}
+
+.solo-logo-2 {
+  width: 600px;
+  margin-bottom: -100px;
+  margin-top: -70px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.company-about {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+}
+
 .section-title {
   color: white;
   font-size: 60px;
@@ -88,6 +138,17 @@ body {
   transform: translate(-50%, -50%); 
   text-align: center; 
   background-color: black;
+}
+
+.contact-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.home-contact {
+  width: 200px;
+  height: 40px;
+  margin-top: 30px;
 }
 
 
