@@ -3,17 +3,7 @@ import SoloImage from '../assets/solovisualswhite.png';
 export default function HomePage() {
   return (
     <div className='home-container' id='home'>
-          <div className="youtube-video">
-            <iframe className='youtube-box'
-              width="100%"
-              height="800"
-              src="https://www.youtube.com/embed/F79OaL7Cn8Q?autoplay=1&modestbranding=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
+          
           <div className='home-about-section'>
             <div className='image-container'>
             <img src={SoloImage} alt="solo-logo" className='solo-logo-2'/>
@@ -52,6 +42,17 @@ export default function HomePage() {
           <button>Watch</button>
         </div>
       </div>
+      <div className="youtube-video">
+            <iframe className='youtube-box'
+              width="100%"
+              height="800"
+              src="https://www.youtube.com/embed/F79OaL7Cn8Q?&modestbranding=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
     </div>
   );
 }
