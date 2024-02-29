@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
+import logoImage from '../assets/solovwhite.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,6 +36,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+       <div className="header-image">
+      <img src={logoImage} alt="logo" className="logo-header"/>
+      </div>
       <div className="menu-toggle" onClick={toggleMenu}>
         <div className={`hamburger ${isOpen ? 'open' : ''}`}></div>
         <div className={`hamburger ${isOpen ? 'open' : ''}`}></div>

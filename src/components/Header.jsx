@@ -5,9 +5,7 @@ export default function Header() {
   return (
     <div>
       
-      <div className="header-image">
-      <img src={logoImage} alt="logo" className="logo-header"/>
-      </div>
+      
       <Navbar />
     </div>
   );
