@@ -55,16 +55,26 @@ const Navbar = () => {
           backgroundColor: '#333',
         }} ref={menuRef}>
           <li className='background-nav-container'><Link to="/" onClick={closeMenu}>Home</Link></li>
-          <li className='background-nav-container'><Link to="/profile" onClick={closeMenu}>Videos</Link></li>
-          <li className='background-nav-container'><Link to="/blog" onClick={closeMenu}>Photos</Link></li>
+          <li className='background-nav-container'><Link to="/videos" onClick={closeMenu}>Videos</Link></li>
+          <li className='background-nav-container'><Link to="/photos" onClick={closeMenu}>Photos</Link></li>
           <li className='background-nav-container'><Link to="/about" onClick={closeMenu}>About</Link></li>
-          <li className='background-nav-container'><Link to="/news" onClick={closeMenu}>Contact</Link></li>
+          <li className='background-nav-container'><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
         </ul>
       )}
      
       <ul className="desktop-menu">
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/profile">Videos</Link></li>
+        <li>
+        <span>Videos
+        <ul className="dropdown-menu">
+        <li><Link to="/videos/music">Music Videos</Link></li>
+        <li><Link to="/videos/events">Events</Link></li>
+        <li><Link to="/videos/lifestyle">Lifestyle</Link></li>
+        <li><Link to="/videos/commericals">Commercials</Link></li>
+        </ul>
+        </span>
+        
+      </li>
         <li><Link to="/blog">Photos</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/news">Contact</Link></li>
