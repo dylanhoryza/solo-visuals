@@ -1,6 +1,12 @@
 import '../styles/musicvideos.css'
 import YouTubeVideo from '../components/YoutubeVideo'
+import React, { useEffect } from 'react';
+
 export default function MusicVideosPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+
   return (
     <div className='video-container'>
       <div className='video-title-section'>

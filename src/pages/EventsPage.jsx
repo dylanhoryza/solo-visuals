@@ -1,6 +1,12 @@
 import '../styles/eventpage.css'
 import YouTubeVideo from '../components/YoutubeVideo'
+import React, { useEffect } from 'react';
+
 export default function EventsPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+
   return (
     <div className='video-container'>
       <div className='video-title-section-2'>
