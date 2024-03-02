@@ -8,6 +8,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import MusicVideosPage from './pages/MusicVideosPage.jsx';
+import EventsPage from './pages/EventsPage.jsx';
+import LifestylePage from './pages/LifestylePage.jsx';
+import CommercialsPage from './pages/CommercialsPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +29,18 @@ const router = createBrowserRouter([
       {
         path: '/videos/music',
         element: <MusicVideosPage />
+      },
+      {
+        path: '/videos/events',
+        element: <EventsPage />
+      },
+      {
+        path: '/videos/lifestyle',
+        element: <LifestylePage />
+      },
+      {
+        path: '/videos/commercials',
+        element: <CommercialsPage />
       }
       
     ]
