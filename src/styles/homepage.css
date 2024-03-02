@@ -99,7 +99,7 @@ body {
 .solo-logo-2 {
   width: 600px;
   margin-bottom: -100px;
-  margin-top: -70px;
+  margin-top: -50px;
 }
 
 .image-container {
@@ -129,6 +129,7 @@ body {
   left: 15%; 
   transform: translate(-50%, -50%); 
   text-align: center; 
+  background-color: rgba(41, 40, 40, 0.7);
   /* background-color: rgba(151, 149, 149, 0.4); */
   /* background-color: transparent; */
   /* border-style: solid; */
@@ -137,17 +138,22 @@ body {
   
 }
 
-.title-container:hover {
+.title-container:hover, .title-container-right:hover {
   background-color: rgba(67, 67, 67, 0.7);
 }
 
 .title-container-right {
   position: absolute; 
-  top: 50%; 
+  top: 75%; 
   left: 85%; 
   transform: translate(-50%, -50%); 
   text-align: center; 
-  background-color: black;
+  background-color: rgba(41, 40, 40, 0.7);
+  /* background-color: rgba(151, 149, 149, 0.4); */
+  /* background-color: transparent; */
+  /* border-style: solid; */
+  width: 500px;
+  border-radius: 20px;
 }
 
 .contact-button-container {
@@ -167,6 +173,13 @@ body {
   border-style: none;
   border-radius: 10px;
   margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.watch-btn:hover {
+  background-color: black;
+  color: white;
 }
 
 .scroll {

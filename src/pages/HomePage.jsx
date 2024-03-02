@@ -1,5 +1,7 @@
 import '../styles/homepage.css';
 import SoloImage from '../assets/solovisualswhite.png';
+import { Link } from 'react-router-dom';
+
 export default function HomePage() {
   return (
     <div className='home-container' id='home'>
@@ -18,28 +20,36 @@ export default function HomePage() {
         <div className='title-container'>
           <h2 className='section-title'>Music Videos</h2>
           <p className='section-description'>Music videos in various genres shot, directed and edited by Solo Visuals.</p>
-          <button className='watch-btn'>Watch</button>
+          <Link to="/videos/music">
+            <button className='watch-btn'>View</button>
+         </Link>
         </div>
       </div>
       <div className='home-concert-videos'>
         <div className='title-container-right'>
           <h2 className='section-title'>Events</h2>
           <p className='section-description'>Description goes here</p>
-          <button className='watch-btn'>Watch</button>
+          <Link to="/videos/events">
+            <button className='watch-btn'>View</button>
+         </Link>
         </div>
       </div>
       <div className='home-lifestyle-videos'>
         <div className='title-container'>
           <h2 className='section-title'>Lifestyle</h2>
           <p className='section-description'>Description goes here</p>
-          <button className='watch-btn'>Watch</button>
+          <Link to="/videos/lifestyle">
+            <button className='watch-btn'>View</button>
+         </Link>
         </div>
       </div>
       <div className='home-commerical-videos'>
         <div className='title-container-right'>
           <h2 className='section-title'>Commercial</h2>
           <p className='section-description'>Description goes here</p>
-          <button className='watch-btn'>Watch</button>
+          <Link to="/videos/commercials">
+            <button className='watch-btn'>View</button>
+         </Link>
         </div>
       </div>
       <div className="youtube-video">
