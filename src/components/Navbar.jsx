@@ -70,7 +70,7 @@ const Navbar = () => {
         <li><Link to="/videos/music">Music Videos</Link></li>
         <li><Link to="/videos/events">Events</Link></li>
         <li><Link to="/videos/lifestyle">Lifestyle</Link></li>
-        <li><Link to="/videos/commericals">Commercials</Link></li>
+        <li><Link to="/videos/commercials">Commercials</Link></li>
         </ul>
         </span>
         
