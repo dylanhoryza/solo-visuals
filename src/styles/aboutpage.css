@@ -3,6 +3,7 @@
   color: white;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); 
+  margin-top: 250px;
 }
 
 .about-me-card:hover {
@@ -11,16 +12,106 @@
   box-shadow: 0 0 12px rgba(234, 232, 232, 0.8);
 }
 
+#about-bio {
+  font-size: 18px;
+}
+
 .avatar:hover {
   box-shadow: 0 0 12px rgba(234, 232, 232, 0.8);
 }
 
 .avatar {
   width: 634px;
-  height: 376px;
+  height: 437px;
   object-fit: cover;
   object-position: top;
   border-radius: 10px;
-  
+  margin-top: 250px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); 
+}
+
+.about-container {
+ 
+  width: 100%;
+}
+
+.our-services {
+  position: relative;
+  background-color: rgb(30, 91, 117);
+  margin-top: 0;
+  background-image: url('../assets/beau-horyza-Ja5jxjMg45w-unsplash.jpg');
+  width: 100%;
+  height: 1100px;
+  background-size: cover;
+}
+
+.services-header {
+  text-align: center;
+  
+  color: white;
+  margin-bottom: 40px;
+}
+
+.service-title {
+  color: white;
+  position: relative;
+  top: 20%;
+  font-size: 70px;
+}
+
+.service-cards {
+  margin-top: 270px;
+}
+
+.list-items li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.card-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+  color: white;
+}
+
+.card {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgb(30, 91, 117);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); 
+}
+
+.card:hover {
+  box-shadow: 0 0 12px rgba(234, 232, 232, 0.8);
+}
+
+.meet-the-team {
+  position: relative;
+  background-color: rgb(49, 53, 55);
+  margin-top: 0;
+  /* background-image: url('../assets/beau-horyza-Ja5jxjMg45w-unsplash.jpg'); */
+  width: 100%;
+  height: 1100px;
+  background-size: cover;
+}
+
+.our-process {
+  position: relative;
+  background-color: rgb(130, 136, 139);
+  margin-top: 0;
+  /* background-image: url('../assets/beau-horyza-Ja5jxjMg45w-unsplash.jpg'); */
+  width: 100%;
+  height: 1100px;
+  background-size: cover;
+}
+
+.brands-section {
+  position: relative;
+  background-color: rgb(59, 62, 64);
+  margin-top: 0;
+  /* background-image: url('../assets/beau-horyza-Ja5jxjMg45w-unsplash.jpg'); */
+  width: 100%;
+  height: 1100px;
+  background-size: cover;
 }
