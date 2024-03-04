@@ -11,6 +11,7 @@ import MusicVideosPage from './pages/MusicVideosPage.jsx';
 import EventsPage from './pages/EventsPage.jsx';
 import LifestylePage from './pages/LifestylePage.jsx';
 import CommercialsPage from './pages/CommercialsPage.jsx';
+import ContactPage from './pages/ContactPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: '/videos/commercials',
         element: <CommercialsPage />
+      },
+      {
+        path: '/contact',
+        element: <ContactPage />
       }
       
     ]
