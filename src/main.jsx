@@ -12,6 +12,7 @@ import EventsPage from './pages/EventsPage.jsx';
 import LifestylePage from './pages/LifestylePage.jsx';
 import CommercialsPage from './pages/CommercialsPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
+import PhotosPage from './pages/PhotosPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <ContactPage />
+      },
+      {
+        path: '/photos',
+        element: <PhotosPage />
       }
       
     ]
@@ -55,4 +60,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router}/>
 )
+
+
 
