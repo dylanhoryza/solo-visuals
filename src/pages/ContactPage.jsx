@@ -77,7 +77,10 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="container text-center contact-container">
+    <div className="contact-container-2">
+      <h1 className='contact-text'>We'd love to hear from you!</h1>
+      <h3 className='contact-description'>Contact us below for more information about booking, prices, and availability</h3>
+      <div className="container text-center contact-container">
       <h1 className='contact-header'>Contact Us</h1>
       <form className="form" onSubmit={sendEmail}>
         <input
@@ -101,7 +104,7 @@ export default function ContactPage() {
           onChange={handleInputChange}
           placeholder="Message"
         />
-        <button type="submit">Submit</button>
+        <button className='contact-submit-btn' type="submit">Submit</button>
       </form>
       {errorMessage && (
         <div>
@@ -109,5 +112,7 @@ export default function ContactPage() {
         </div>
       )}
     </div>
+      </div>
+      
   );
 }

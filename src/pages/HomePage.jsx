@@ -12,7 +12,9 @@ export default function HomePage() {
             </div>
             <h3 className='company-about'>A visual media company</h3>
             <div className='contact-button-container'>
-            <button className='home-contact'>Contact</button>
+              <Link to="/contact">
+              <button className='home-contact'>Contact</button>
+              </Link>
             </div>
             <p className='scroll'>*scroll down*</p>
           </div>
