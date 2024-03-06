@@ -10,7 +10,7 @@ export default function MusicVideosPage() {
   return (
     <div className='video-container'>
       <div className='video-title-section'>
-      <h1 className='music-videos-title'>Music Videos</h1>
+      <h1 className='music-videos-title'>MUSIC <span>VIDEOS</span></h1>
       </div>
       <div className='row video-boxes'>
       <YouTubeVideo videoId="FvGffrEfq8I" />

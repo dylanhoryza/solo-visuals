@@ -12,7 +12,29 @@
 .lifestyle-title {
   color: white;
   position: absolute; 
-  top: 45%; 
-  right: 45%;
+  top: 55%; 
+  right: 40%;
   font-size: 70px;
+  font-weight: bold;
 }
+
+.lifestyle-title span {
+  color: rgb(228, 202, 89);
+}
+
+@media (max-width: 767px) {
+  .video-title-section-3 {
+    background-position: 50%;
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .lifestyle-title {
+    color: white;
+    position: absolute; 
+    top: 60%; 
+    left: 10%;
+    font-size: 70px;
+    font-weight: bold;
+  }
+  }
