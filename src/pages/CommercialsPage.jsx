@@ -10,7 +10,7 @@ export default function CommercialsPage() {
   return (
     <div className='video-container'>
       <div className='video-title-section-4'>
-      <h1 className='commercials-title'>Commercials</h1>
+      <h1 className='commercials-title'>COMMER<span>CIALS</span></h1>
       </div>
       <div className='row video-boxes'>
       <YouTubeVideo videoId="FvGffrEfq8I" />

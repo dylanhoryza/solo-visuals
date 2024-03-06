@@ -9,7 +9,7 @@ export default function LifestylePage() {
   return (
     <div className='video-container'>
       <div className='video-title-section-3'>
-      <h1 className='lifestyle-title'>Lifestyle</h1>
+      <h1 className='lifestyle-title'>LIFE<span>STYLE</span></h1>
       </div>
       <div className='row video-boxes'>
       <YouTubeVideo videoId="FvGffrEfq8I" />

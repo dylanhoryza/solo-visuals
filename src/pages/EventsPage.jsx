@@ -10,7 +10,7 @@ export default function EventsPage() {
   return (
     <div className='video-container'>
       <div className='video-title-section-2'>
-      <h1 className='events-title'>Events</h1>
+      <h1 className='events-title'>EVENT <span>RECAPS</span></h1>
       </div>
       <div className='row video-boxes'>
       <YouTubeVideo videoId="FvGffrEfq8I" />

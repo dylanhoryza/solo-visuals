@@ -13,8 +13,30 @@
   color: white;
   position: absolute; 
   top: 45%; 
-  right: 45%;
+  right: 35%;
   font-size: 70px;
+  font-weight: bold;
 }
+
+.events-title span {
+  color: rgb(228, 202, 89);
+}
+
+@media (max-width: 767px) {
+  .video-title-section-2 {
+    background-position: 70%;
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .events-title {
+    color: white;
+    position: absolute; 
+    top: 60%; 
+    left: 20%;
+    font-size: 70px;
+    font-weight: bold;
+  }
+  }
 
 

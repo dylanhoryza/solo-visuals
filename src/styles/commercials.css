@@ -13,6 +13,28 @@
   color: white;
   position: absolute; 
   top: 45%; 
-  right: 40%;
+  right: 37%;
   font-size: 70px;
+  font-weight: bold;
 }
+
+.commercials-title span {
+  color: rgb(228, 202, 89);
+}
+
+@media (max-width: 767px) {
+  .video-title-section-4 {
+    background-position: 50%;
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .commercials-title {
+    color: white;
+    position: absolute; 
+    top: 50%; 
+    left: 5%;
+    font-size: 55px;
+    font-weight: bold;
+  }
+  }
