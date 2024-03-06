@@ -1,6 +1,29 @@
 import '../styles/homepage.css';
 import SoloImage from '../assets/solovisualswhite.png';
 import { Link } from 'react-router-dom';
+import React from 'react';
+import { useSpring, animated } from 'react-spring';
+import { useInView } from 'react-intersection-observer';
+
+const AnimatedSectionTitle = ({ children }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger animation once
+    threshold: 0.7, // When 50% of the element is in view
+  });
+
+  // Define the spring animation properties
+  const animation = useSpring({
+    opacity: inView ? 1 : 0,
+    transform: inView ? 'translateY(0)' : 'translateY(20px)',
+    from: { opacity: 0, transform: 'translateY(20px)' },
+  });
+
+  return (
+    <animated.h2 ref={ref} className='section-title' style={animation}>
+      {children}
+    </animated.h2>
+  );
+};
 
 export default function HomePage() {
   return (
@@ -10,18 +33,20 @@ export default function HomePage() {
             <div className='image-container'>
             <img src={SoloImage} alt="solo-logo" className='solo-logo-2'/>
             </div>
-            <h3 className='company-about'>A visual media company</h3>
+            <h3 className='company-about'>A VISUAL MEDIA COMPANY</h3>
             <div className='contact-button-container'>
               <Link to="/contact">
               <button className='home-contact'>Contact</button>
               </Link>
             </div>
-            <p className='scroll'>*scroll down*</p>
+            
+            
+            <div className='icon-scroll'></div>
           </div>
       <div className='home-music-videos'>
         <div className='title-container'>
-          <h2 className='section-title'>Music Videos</h2>
-          <p className='section-description'>Music videos in various genres shot, directed and edited by Solo Visuals.</p>
+        <AnimatedSectionTitle>MUSIC <span>VIDEOS</span></AnimatedSectionTitle>
+          {/* <p className='section-description'>Music videos in various genres shot, directed and edited by Solo Visuals.</p> */}
           <Link to="/videos/music">
             <button className='watch-btn'>View</button>
          </Link>
@@ -29,8 +54,8 @@ export default function HomePage() {
       </div>
       <div className='home-concert-videos'>
         <div className='title-container-right'>
-          <h2 className='section-title'>Events</h2>
-          <p className='section-description'>Description goes here</p>
+        <AnimatedSectionTitle>EVENT <span>RECAPS</span></AnimatedSectionTitle>
+          {/* <p className='section-description'>Concerts, corporate events, grand openings and more!</p> */}
           <Link to="/videos/events">
             <button className='watch-btn'>View</button>
          </Link>
@@ -38,8 +63,8 @@ export default function HomePage() {
       </div>
       <div className='home-lifestyle-videos'>
         <div className='title-container'>
-          <h2 className='section-title'>Lifestyle</h2>
-          <p className='section-description'>Description goes here</p>
+        <AnimatedSectionTitle>LIFE<span>STYLE</span></AnimatedSectionTitle>
+          {/* <p className='section-description'>Description goes here</p> */}
           <Link to="/videos/lifestyle">
             <button className='watch-btn'>View</button>
          </Link>
@@ -47,8 +72,8 @@ export default function HomePage() {
       </div>
       <div className='home-commerical-videos'>
         <div className='title-container-right'>
-          <h2 className='section-title'>Commercial</h2>
-          <p className='section-description'>Description goes here</p>
+        <AnimatedSectionTitle>COMMER<span>CIALS</span></AnimatedSectionTitle>
+          {/* <p className='section-description'>Description goes here</p> */}
           <Link to="/videos/commercials">
             <button className='watch-btn'>View</button>
          </Link>
