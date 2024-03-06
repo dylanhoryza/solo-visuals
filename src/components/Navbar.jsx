@@ -55,7 +55,15 @@ const Navbar = () => {
           backgroundColor: '#333',
         }} ref={menuRef}>
           <li className='background-nav-container'><Link to="/" onClick={closeMenu}>Home</Link></li>
-          <li className='background-nav-container'><Link to="/videos" onClick={closeMenu}>Videos</Link></li>
+          <li className='background-nav-container'>
+        <span className='menu-span'>Videos</span>
+        <ul className="dropdown-menu">
+          <li><Link to="/videos/music" onClick={closeMenu}>Music Videos</Link></li>
+          <li><Link to="/videos/events" onClick={closeMenu}>Events</Link></li>
+          <li><Link to="/videos/lifestyle" onClick={closeMenu}>Lifestyle</Link></li>
+          <li><Link to="/videos/commercials" onClick={closeMenu}>Commercials</Link></li>
+        </ul>
+      </li>
           <li className='background-nav-container'><Link to="/photos" onClick={closeMenu}>Photos</Link></li>
           <li className='background-nav-container'><Link to="/about" onClick={closeMenu}>About</Link></li>
           <li className='background-nav-container'><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
