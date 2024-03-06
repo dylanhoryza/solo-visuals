@@ -86,8 +86,8 @@ export default function PhotosPage() {
     return (
       
       <div className='photo-section'>
-        <h1 className='photo-header'>Photos</h1>
-        <h3 className='photo-description'>Swipe to see some of our favorite photos!</h3>
+        <h1 className='photo-header'>PHOTOS</h1>
+        <h3 className='photo-description'>Swipe to see some of our <span>favorite photos!</span></h3>
         <div className='photo-container'>
         {props.map(({ x, y, rot, scale }, i) => (
           <animated.div className="deck" key={i} style={{ x, y }}>
