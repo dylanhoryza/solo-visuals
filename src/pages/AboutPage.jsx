@@ -1,89 +1,60 @@
 import avatarImage from '../assets/beau-avatar.jpg';
 import '../styles/aboutpage.css';
+import { Link } from 'react-router-dom';
+import FilmIcon from '../about-images/film.png'
+import Clapper from '../about-images/clapperboard.png'
+import FilmIcon2 from '../about-images/film (1).png'
+import VideoIcon from '../about-images/video-camera.png'
+import MusicIcon from '../about-images/musical-note.png'
+import EventIcon from '../about-images/cheers.png'
+import PhotoIcon from '../about-images/camera-to-take-photos.png'
+import SocialMedia from '../about-images/cell-phone.png'
+
 export default function AboutPage() {
   return (
     <section className='about-container' id='home'>
       <div className='our-services'>
         <div className='service-title'>
-          <h1 className='services-header'>Our Services</h1>
+          <h1 className='services-header'>OUR <span>SERVICES</span></h1>
         </div>
-        <div className='row service-cards'>
-          <div className='col-md-3'>
-            <div className='card'>
-              <div className='card-body'>
-                <h5 className='card-title'>Short Form Content</h5>
-                <div className='list-items'>
-                  <li>Video ads</li>
-                  <li>Behind the scenes</li>
-                  <li>Marketing</li>
-                  <li>Social Media</li>
-                  <li>Promotion</li>
-                  <li>Modeling</li>
-                  <li>Life Events</li>
-                  <li>Podcasts</li>
-                </div>
-              </div>
-            </div>
+        <div className='image-grid'>
+          <div className='grid-item'>
+            <img src={MusicIcon} alt='Description 1' />
+            <h2 className='image-title'>Music Videos</h2>
+            <p>We speacialize in bringing your song to life with creating a full length music video with 4k quality, color correction, and the ability to travel to any location.</p>
+            <Link to="/videos/music">
+            <button className='watch-btn-about'>View</button>
+         </Link>
           </div>
-
-          <div className='col-md-3'>
-            <div className='card'>
-              <div className='card-body'>
-                <h5 className='card-title'>Music Videos</h5>
-                <div className='list-items'>
-                  <li>Full length music videos</li>
-                  <li>Music video editing</li>
-                  <li>Color correction</li>
-                  <li>Location spotting</li>
-                  <li>Storyboard and treatment</li>
-                  <li>Able to shoot in any city</li>
-                  <li>4k quality</li>
-                  <li>Music video promo clips</li>
-                </div>
-              </div>
-            </div>
+          <div className='grid-item'>
+            <img src={EventIcon} alt='Description 2' />
+            <h2 className='image-title'>Events</h2>
+            <p>We shoot all types of events including but not limited to concerts, corporate events, weddings, birthdays, sports, meetings, interviews and grand openings.</p>
+            <Link to="/videos/events">
+            <button className='watch-btn-about'>View</button>
+         </Link>
           </div>
-
-          <div className='col-md-3'>
-            <div className='card'>
-              <div className='card-body'>
-                <h5 className='card-title'>Photography</h5>
-                <div className='list-items'>
-                  <li>Concerts</li>
-                  <li>Engagements</li>
-                  <li>Weddings</li>
-                  <li>Social Media</li>
-                  <li>Business</li>
-                  <li>Headshots</li>
-                  <li>Behind the Scenes</li>
-                  <li>Travel</li>
-                </div>
-              </div>
-            </div>
+          <div className='grid-item'>
+            <img src={PhotoIcon} alt='Description 3' />
+            <h2 className='image-title'>Photography</h2>
+            <p>Book a photoshoot to capture special moments from your concerts, engagements, weddings, or if you need professional headshots or business photos.</p>
+            <Link to="/photos">
+            <button className='watch-btn-about'>View</button>
+         </Link>
           </div>
-
-          <div className='col-md-3'>
-            <div className='card'>
-              <div className='card-body'>
-                <h5 className='card-title'>Events</h5>
-                <div className='list-items'>
-                  <li>Concerts</li>
-                  <li>Corporate Events</li>
-                  <li>Weddings</li>
-                  <li>Birthdays</li>
-                  <li>Interviews</li>
-                  <li>Grand Openings</li>
-                  <li>Sporting Events</li>
-                  <li>Meetings</li>
-                </div>
-              </div>
-            </div>
+          <div className='grid-item'>
+            <img src={SocialMedia} alt='Description 4' />
+            <h2 className='image-title'>Short Form Content</h2>
+            <p>Short form content is essential to any business or creative looking to market their brand or even highlight life events. This is great for video ads, behind the scenes, social media, and marketing.</p>
+            <Link to="/videos/lifestyle">
+            <button className='watch-btn-about'>View</button>
+         </Link>
           </div>
         </div>
       </div>
       <div className='meet-the-team'>
         <div className='service-title'>
-          <h1 className='services-header'>Meet the Team</h1>
+          <h1 className='services-header'>MEET THE <span>TEAM</span></h1>
         </div>
         <div className='container'>
           <div className='row about-container'>
@@ -119,12 +90,35 @@ export default function AboutPage() {
       </div>
       <div className='our-process'>
         <div className='service-title'>
-          <h1 className='services-header'>Our Process</h1>
+          <h1 className='services-header'>OUR <span>PROCESS</span> </h1>
+        </div>
+        <div className='image-grid'>
+          <div className='grid-item'>
+            <img src={FilmIcon} alt='Description 1' />
+            <h2 className='image-title'>Consultation</h2>
+            <p>Upon booking, we will meet with you and get an idea of everything you are looking for so we can bring your creative vision to life!</p>
+          </div>
+          <div className='grid-item'>
+            <img src={Clapper} alt='Description 2' />
+            <h2 className='image-title'>Conceptualiztion</h2>
+            <p>Behind the scenes, we will develop a storyboard and treatment that includes everything we discussed during the consultation as well as reference images and locations.</p>
+          </div>
+          <div className='grid-item'>
+            <img src={VideoIcon} alt='Description 3' />
+            <h2 className='image-title'>Production</h2>
+            <p>Where the fun begins! The day of your shoot will be dedicated to delivering everything planned in the treatment as we bring our ideas to life!</p>
+          </div>
+          <div className='grid-item'>
+            <img src={FilmIcon2} alt='Description 4' />
+            <h2 className='image-title'>Post-Production</h2>
+            <p>Editing begins from all of the content captured from your shoot and we will work hard to deliver everything by the agreed upon deadline.</p>
+          </div>
         </div>
       </div>
+
       <div className='brands-section'>
         <div className='service-title'>
-          <h1 className='services-header'>Brands That Trust Us</h1>
+          <h1 className='services-header'>BRANDS THAT <span> TRUST US</span></h1>
         </div>
       </div>
     </section>
