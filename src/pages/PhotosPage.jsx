@@ -2,15 +2,40 @@ import React, { useState } from 'react';
 import { useSprings, animated, to as interpolate } from '@react-spring/web';
 import { useDrag } from 'react-use-gesture';
 import '../styles/photopage.css'
+import MoxasImage from '../photos/moxasportrait.jpg'
+import BabyPic1 from '../photos/babyportrait.jpg'
+import BabyPic2 from '../photos/babyportrait2.jpg'
+import CaliPhoto from '../photos/cali1.jpg'
+import CameraPhoto from '../photos/camerashot.jpg'
+import ChristianImage from '../photos/christianportrait.jpg'
+import CloudsPhoto from '../photos/clouds.jpg'
+import MarkPhoto from '../photos/markportrait.jpg'
+import Maternity1 from '../photos/maternity1.jpg'
+import Maternity2 from '../photos/maternity2.jpg'
+import Maternity3 from '../photos/maternity3.jpg'
+import Maternity4 from '../photos/maternity4.jpg'
+import NewYorkPhoto from '../photos/nyc1.jpg'
+import TulumPhoto1 from '../photos/tulum1.jpg'
+import TulumPhoto2 from '../photos/tulum2.jpg'
 
 export default function PhotosPage() {
   const cards = [
-    'https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_08_Strength.jpg',
-    'https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_16_Tower.jpg',
-    'https://upload.wikimedia.org/wikipedia/commons/9/9b/RWS_Tarot_07_Chariot.jpg',
-    'https://upload.wikimedia.org/wikipedia/commons/d/db/RWS_Tarot_06_Lovers.jpg',
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg',
-    'https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg',
+    MoxasImage,
+    BabyPic1,
+    BabyPic2,
+    CaliPhoto,
+    CameraPhoto,
+    ChristianImage,
+    CloudsPhoto,
+    MarkPhoto,
+    Maternity1,
+    Maternity2,
+    Maternity3,
+    Maternity4,
+    NewYorkPhoto,
+    TulumPhoto1,
+    TulumPhoto2
+    
   ];
   
   const to = (i) => ({
@@ -24,7 +49,7 @@ export default function PhotosPage() {
   const from = (_i) => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
   
   const trans = (r, s) =>
-    `perspective(1500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`;
+    `perspective(1500px) rotateX(15deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`;
   
   function Deck() {
     const [gone] = useState(() => new Set());
@@ -59,7 +84,11 @@ export default function PhotosPage() {
     });
   
     return (
-      <div className='photo-container'>
+      
+      <div className='photo-section'>
+        <h1 className='photo-header'>Photos</h1>
+        <h3 className='photo-description'>Swipe to see some of our favorite photos!</h3>
+        <div className='photo-container'>
         {props.map(({ x, y, rot, scale }, i) => (
           <animated.div className="deck" key={i} style={{ x, y }}>
             <animated.div
@@ -71,6 +100,13 @@ export default function PhotosPage() {
             />
           </animated.div>
         ))}
+        </div>
+        <div className='photo-btn'>
+        <button className='view-photos-btn' onClick={() => window.open("https://unsplash.com/@solovisuals", "_blank")}>
+            View More Photos
+        </button>
+        </div>
+       
       </div>
     );
   }
