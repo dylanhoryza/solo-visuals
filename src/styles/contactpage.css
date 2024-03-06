@@ -3,7 +3,7 @@
   padding: 20px;
   border-radius: 8px;
   margin-top: 90px;
-  background-color: #151F29;
+  background-color: #287b9e;
   max-width: 600px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8); 
   transition: box-shadow 0.3s ease-in-out;
@@ -58,6 +58,11 @@ textarea {
   position: relative;
   margin-top: 150px;
   font-size: 70px;
+  font-weight: bold;
+}
+
+.contact-text span {
+  color: rgb(228, 202, 89);
 }
 
 .contact-description {

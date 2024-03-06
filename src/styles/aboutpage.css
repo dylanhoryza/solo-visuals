@@ -179,3 +179,52 @@
   background-color: white;
   color: black;
 }
+
+@media (max-width: 767px) {
+  .about-me-card,
+  .avatar {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+   
+  }
+
+  .service-title {
+    top: 5%;
+    
+  }
+
+  .list-items {
+    margin-top: 50px;
+  }
+
+  .list-items li {
+    margin-left: 0;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item p {
+    width: 80%;
+  }
+
+  
+  .our-services
+   {
+    height: 2400px;
+  }
+
+  .our-process {
+    height: 2200px;
+  }
+
+  .meet-the-team {
+    height: 1400px;
+  }
+
+  .brands-section {
+    height: 800px;
+  }
+}
